@@ -1,49 +1,51 @@
 <!-- Navigation Bar -->
-<nav id="#header" class="navbar fixed-top">
-    <div class="container-fluid p-0 bg-white">
+ <!-- Explanation line by line -->
+
+<nav id="header" class="navbar fixed-top bg-white shadow-sm">
+    <!--Replacign this line makes the container stay in just one line
+    <div class="container-fluid d-flex justify-content-between align-items-center py-2 px-3">
+    -->
+    <div class="container-fluid d-flex justify-content-between align-items-center px-3">
+        <!--WRAP THE MENU BLOCK IN A CENTER COLUMN
+        container-sm makes the menu be on the right position WHAAAT-->
         <div class="container-fluid container-sm p-0">
             <div class="textColor">
-                <div class="row justify-content-center align-items-center mx-auto">
-                    <div class="col-12 col-md-3 p-0">
-                        <!-- <div class="display-3 fw-bold py-2 text-center text-lg-start d-none d-lg-block">LOGO</div> -->
-                        <div class="py-1 text-sm-start text-lg-start d-none d-md-block"><img class="iconHeight"
-                                             src="../images/logo_edunineBrand.png" alt="logo"></div>
+                 <!--  Move the logo icon to the left -->
+                 <!--  LOGO LEFT 
+                   class in img is omitted-->
+                <div class="d-flex align-items-center">
+                    <a href="index.php">
+                        <img src="../images/logo_edunineBrand.png" alt="EDUNINE Logo" style="height: 60px;">
+                    </a>
+                </div>
+                    <!--<div class="col-12 col-md-3 p-0">
+                        <div class="display-3 fw-bold py-2 text-center text-lg-start d-none d-lg-block">LOGO</div> 
+                        <div class="py-1 text-sm-start text-lg-start d-none d-md-block">-->
+                            
+                    <!--  TITLE COMMENTED 
                     </div>
-                    <div class="col-8 col-md-6">
+                     <div class="col-8 col-md-6">
                         <div class="d-flex justify-content-center align-items-center">
                             <div class="py-2"><h2 class="fw-bold text-center lh-1 m-0">EDUNINE 2026</h2>
                                 <h6 class="fw-medium text-center lh-1 m-0 d-none d-md-block">X IEEE World Engineering Education Conference</h6>
                                 <h6 class="fw-thin text-center lh-1 m-1 d-none d-md-block">March 8-11, 2025 - Mexico City, Mexico</h6> 
                             </div>
                         </div>
-                    </div>
-                    <div class="col-4 col-md-3">
-                        <div class="d-flex justify-content-end align-items-end">
+                    </div> 
+                    </div> -->
 
-                            <a id="language1" href="#">
-                                <div class="me-1 py-2"><img src="../images/languages/selector/port.jpeg"></div></a>
-                            <script>
-                                var currentLocation = window.location.href;
-                                currentLocation = currentLocation.split("eng");
-                                var output = currentLocation[0] + "port" + currentLocation[1];
-                                document.getElementById('language1').href = output;
-                            </script> 
-                            <a id="language2" href="#">
-                                <div class="me-1 py-2"><img  src="../images/languages/selector/sp.jpeg"></div></a>
-                            <script>
-                                var currentLocation = window.location.href;
-                                currentLocation = currentLocation.split("eng");
-                                var output = currentLocation[0] + "sp" + currentLocation[1];
-                                document.getElementById('language2').href = output;
-                            </script>                             
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
+
+            <!--THIS PART IS FUNDAMENTAL-->
             <hr class="my-0 d-md-none">
             <!--  <div class="text-center display-3 fw-bold mb-2 d-lg-none">LOGO</div> -->
-            <div class="navbarBgDark" data-bs-theme="light">
-                <nav class="navbar navbar-expand-md justify-content-center justify-content-md-between p-0">
+            <div class="navbarBgDark" data-bs-theme="Light">
+                <!--<nav class="navbar navbar-expand-md justify-content-center justify-content-md-between p-0">-->
+                <nav class="navbar navbar-expand-md justify-content-center p-0 w-100">
+
+
 
                     <button class="navbar-toggler m-2" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -51,10 +53,26 @@
                         <span class="navbar-toggler-icon"></span>
                         Menu
                     </button>
+                    <!--MENU CENTERING
                     <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
-                        <ul class="navbar-nav text-uppercase ps-3">
-                            <li class="nav-item"><a class="nav-link" href="index.php"><span>Home</span></a></li>
-                            <li class="nav-item dropdown">
+                        2ND TRIAL
+                    <div class="d-none d-md-flex flex-grow-1 justify-content-center">
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    
+                        3RD TRIAL
+                        Modification:
+                        style="margin-right: 50px;" shifts the whole menu left just a bit.
+                    <div class="d-flex justify-content-center flex-grow-1">
+                    The position of the menu can be fixed by changing "200px"
+                        -->
+                    
+                    <div class="d-flex justify-content-center flex-grow-1" style="margin-right: 300px;">
+
+
+                        <ul class="navbar-nav flex-row text-lowercase"> <!--Absolutely everything changed to lowercase-->
+                            <li class="nav-item px-0"><a class="nav-link" href="index.php">Home</a></li> <!--<span> was eliminated-->
+                                <!--No padding but still Contact us is not working. Even with no padding, the menu option "Contact Us is still not working"-->
+                            <li class="nav-item dropdown px-0">
                                 <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">About</a>   
                                 <ul class="dropdown-menu" aria-labelledby="dropdown01">
                                     <li><a class="dropdown-item nav-link" href="index.php?id=coordinators">Coordinators</a></li>
@@ -113,10 +131,44 @@
                             <li class="nav-item"><a class="nav-link" href="mailto:edunine@edunine.eu">Contact us</a></li>
                             <li class="nav-item"><a class="nav-link text-primary" href="#dates"></a></li>
                         </ul>
-                 <!--       <ul class="navbar-nav text-uppercase ps-3 me-2 justify-content-end">
+                         <!--       <ul class="navbar-nav text-uppercase ps-3 me-2 justify-content-end">
                             <li class="nav-item me-2"><a class="btn btn-dark" href="#dates" role="button">Timeline</a></li>
                         </ul> -->
                     </div>
+
+
+                    <!-- Right column: Language selectors -->
+                    <div class="d-flex flex-column align-items-end w-50">
+                        <div class="dropdown me-3">
+                            <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../images/languages/selector/eng.jpeg" alt="English" style="height: 20px;" class="me-2">
+                                Language
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                                <li>
+                                <a class="dropdown-item d-flex align-items-center" id="lang-port" href="#">
+                                    <img src="../images/languages/selector/port.jpeg" alt="Portuguese" style="height: 20px;" class="me-2"> Portuguese
+                                </a>
+                                </li>
+                                <li>
+                                <a class="dropdown-item d-flex align-items-center" id="lang-sp" href="#">
+                                    <img src="../images/languages/selector/sp.jpeg" alt="Spanish" style="height: 20px;" class="me-2"> Spanish
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <script>
+                        const currentUrl = window.location.href;
+                        const baseParts = currentUrl.split("eng");
+                        const prefix = baseParts[0];
+                        const suffix = baseParts[1];
+
+                        document.getElementById("lang-port").href = prefix + "port" + suffix;
+                        document.getElementById("lang-sp").href = prefix + "sp" + suffix;
+                        </script>
+                    </div>
+
                 </nav>
             </div>
         </div>
