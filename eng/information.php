@@ -655,6 +655,7 @@
                             <h5 class="fs-3 fw-bold">Workshop Proposal Paper Formatting Guidelines</h5>
                             <p class="lh-sm"><p class="lh-sm"><b>Workshop Papers</b> describe interactive, hands-on sessions intended for skill-building, discussion, and participant engagement. This format is used for:</p><ul><li>
                                     <b>Category 5: Workshop Proposals</b></li></ul>
+                                    
                             <div class=" col d-flex flex-fill justify-content-center">
                                 <div class="card"> 
                                     <div class="card-header">
