@@ -1,10 +1,15 @@
+.card-body{
+    max-width: auto;
+    height: auto;
+}
 /* FLIP CARDS FORMAT */
 .container-card{
     /*width: 100%;*/
     max-width: 100%;     /* will shrink below 400px */
-    height: 500px;
+    height: 450px;
     perspective: 700px;
     border-radius: 2rem;
+    overflow: hidden;
     /*max-width: 800px;
     font-family: "Quicksand", sans-serif;
     /*background-color: rgb(110, 241, 23)*/
@@ -57,8 +62,6 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
-    height: 100%;
-    width: 100%;
 }
 
 .back1 .table {
@@ -83,7 +86,7 @@
 @media only screen and (max-width: 950px) {
      .container-card{
     max-width: 100%;     /* will shrink below 400px */
-    height: 800px;
+    height: 880px;
     perspective: 700px;
     border-radius: 2rem;
     }

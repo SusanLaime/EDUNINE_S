@@ -685,7 +685,8 @@
         <!-- Manuscript Template -->
 
         <section id="templateChoose">
-            <div class="container-fluid align-content-start pt-5 pb-0">
+            <!-- 
+            <div class="container-fluid align-content-start pt-0 pb-0">
                 <ul class="breadcrumb">
                     <li><a href="index.php">Home</a></li>
                     <li><a href="index.php?id=dates">Author</a></li>
@@ -693,6 +694,7 @@
                     <li>Mandatory_Conference_Paper_Template</li>
                 </ul> 
             </div>
+            -->
             <div class= "container-fluid tope  pb-5">
                 <div class="row g-5">
                     <div class= "col text-sm-left">
