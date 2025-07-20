@@ -29,6 +29,8 @@
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
         <!--END  SLICK CAROUSEL -->
 
+        <!--Flip card -->
+        <link href="../css/flipcard.css" rel="stylesheet"> 
     </head>
     <body onload = "jump()">
         <?php
@@ -547,7 +549,8 @@
                     <p class="lh-sm">Workshop proposals should demonstrate clear pedagogical goals, structured activities, and relevance to the educational community. Proposals lacking interactive elements or based solely on lectures will not be prioritized.</p> 
                 </div>                               
             </div>  
-            <!-- Formatting guidelines -->          
+            <!-- Formatting guidelines -->  
+             <!--        
             <div class="container-fluid py-3 bg-body-white">
                 <div class ="row">
                     <div class= "col text-sm-left"> 
@@ -558,7 +561,7 @@
                     </div>
                 </div>
 
-                <!-- FULL Paper -->
+                <!- FULL Paper ->
                 <div class="row bg-info-subtle py-3">
                     <div class= "col text-sm-left">
                         <div class="clearfix">
@@ -586,7 +589,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- WIP -->
+                <!- WIP ->
                 <div class="row bg-light py-3">
                     <div class= "col text-sm-left">
                         <div class="clearfix">
@@ -615,7 +618,7 @@
                     </div>
                 </div> 
 
-                <!-- DS Paper -->
+                <!- DS Paper ->
                 
                 <div class="row bg-info-subtle py-3">
                     <div class= "col text-sm-left">
@@ -643,7 +646,7 @@
                         </div> 
                     </div>
                 </div>
-                <!-- Workshop Proposal Paper -->
+                <!- Workshop Proposal Paper ->
 
                 <div class="row bg-light py-3">
                     <div class= "col text-sm-left">
@@ -672,6 +675,11 @@
                 </div>
 
             </div>
+             -->
+
+            <!--NEW VERSION FORMATTING TYPES-->
+                <?php include __DIR__ . '../cards.html'; ?>
+            
         </section>
 
         <!-- Manuscript Template -->
